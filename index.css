@@ -1,0 +1,225 @@
+/* this is for the navigation */
+body {
+    margin: 0;
+    font-family: Times New Roman, Helvetica, sans-serif;
+  }
+    /* the big line on top that extends throughout the page*/
+  .topnav {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #DDA0DD;
+  }
+    /* The writing of the words color and where it is formated*/
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Times New Roman;
+  }
+    /* the hover is one you with your mouse of over it but not press on it*/
+  .topnav a:hover {      
+    background-color: #965b9427;
+    color: black;
+  }
+    /* this color is when you press on the button, active can give a hint. will be green once pressed on it and the text will white*/
+  .topnav a.active {
+    background-color:#965b94b9;
+    color: white;
+  }
+    /* navigation ends here*/
+
+    
+
+    /* The hero image starts here*/
+ 
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+    /*The hero image */
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg") ;
+    /* Set a specific height */
+    height: 50%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+ /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  } 
+
+  /*for the button */
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* The hero image ends here*/
+
+  /* About us page strats here*/
+  
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* this makes the pic boxes look how they look on the web page*/
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  /* puts a shadow and some stuff like line around the pics and info*/
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  /* this is what makes the about us and the stuff under it all behind it pink */
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #DDA0DD;
+    color: white;
+  }
+
+  /* moves the words under the pic box by a bit to make it neater */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* the box that has the picutre and the information, is small and the contact is exaclty on the line,
+   with this below it will make the box longer form the bottom */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* makes the class title colored in grey*/
+  .title {
+    color: grey;
+  }
+  /* makes the contact button bigger and fills it in the color black*/
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #DDA0DD;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* when u hover over the button it will be grey*/
+  .button:hover {
+    background-color: #555;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  /* for the contact us */ 
+  body {
+    font-family: Times New Roman, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Style inputs */
+  /* Sorganizes the boxes for the inputs*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* makes the submit box have a color*/
+input[type=submit] {
+  background-color: #DDA0DD;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* when you hover over the submit button it will give you tih color*/
+input[type=submit]:hover {
+  background-color: #555;
+}
+
+/* Style the container/contact section makes the colr into grey */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #965b94b9;
+  color: white;
+  text-align: center;
+}

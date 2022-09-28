@@ -1,0 +1,128 @@
+<html lang="en">
+<meta charset="UTF-8"> <!--takes the code and traslate it into string of binary -->
+<title>index.html</title>  <!-- page ttile -->
+<meta name="viewport" content="width=device-width,initial-scale=1">  <!-- meta viewport tag makes the page look good on all screen sizes -->
+<link rel="stylesheet" href="index.css"> <!-- links to a a stylesheet -->
+<style>
+</style>
+<script src="name"></script>  <!-- script tag links to a script -->
+<body>
+
+    <!-- crating a top Navigation Bar-->
+<div class="topnav">
+    <a class="active" href="#home"><b>Home</b></a>
+    <a href="#exp">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a> 
+  </div>
+
+  <!--Creating the wrting on top of the imagie-->
+  <!--hero image is an oversized banner image at the top of a website-->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>I am Sara Daher</h1>
+      <p>And I'm a Software Engineer</p>
+      <button> Company Mission</button>
+    </div>
+  </div>
+
+
+<div class="workexp"> <!-- class name -->
+  <div class="container"></div>
+  <h1 id = exp>Our Work Experience</h1> <!-- Heading -->
+ <p>Experienced in the coding languages!</p> <!-- Paragraph -->
+ <p>Our caompany has an overall ten year experience in the software feild and we want to benefit the world! </p>
+
+</div>
+
+<!--about us section-->
+<div class="about-section">
+    <h1 id= "about"> About Us Page</h1>
+    <p>Leran to code with the our coding courses!</p>
+  </div>
+  <!--this is compelatio of about us page  -->
+  <!--Created 3 classes: row,column, and card. Card will have image of the person-->
+  <!--This will have a picture, name, postion, gmail, describing the job, and a button for contact-->
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="t1.jpg" alt="Sara" style="width:100%">
+        <div class="container">
+          <h2>Sara Daher</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Founder of the company.</p>
+          <p>sara@gmail.com</p> 
+          <p><button class="button">Contact</button></p> 
+        </div>
+      </div>
+    </div>
+
+     <!--This will have a picture, name, postion, gmail, describing the job, and a button for contact-->
+    <div class="column">
+      <div class="card">
+        <img src="t2.jpg" alt="Emily" style="width:100%">
+        <div class="container">
+          <h2>Emily Ross</h2>
+          <p class="title">Customer Service</p>
+          <p>In charge of Customer Service.</p>
+          <p>Emily@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+     <!--This will have a picture, name, postion, gmail, describing the job, and a button for contact-->
+    <div class="column">
+      <div class="card">
+        <img src="t3.jpg" alt="Sally" style="width:100%">
+        <div class="container">
+          <h2>Sally Rohn</h2>
+          <p class="title">Designer</p>
+          <p>Designer of the team.</p>
+          <p>Sally@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--about us section ending-->
+
+  <!--the contact part starts here-->
+  <div class="container">
+    <div style="text-align:center">
+      <h2 id = contact>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave us a message:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="contact.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="Thankyou.html">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."> <!-- creates the box and what goes inside od the box-->
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <!-- the select id ia what it makes the countires inside the box-->
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<!--the contact part ends here-->
+
+<!-- the footer-->
+
+<div class="footer">
+  <p>Footer</p>
+</body>
+</html>
